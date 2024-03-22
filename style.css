@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+html, body{
+    width:100%;
+    height:100vh;
+    background-color: rgb(114, 201, 231);
+    overflow: hidden;
+}
+.nav{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    padding:2rem 1rem 2rem 2rem;
+    font-family: "Monument Extended";
+
+    
+}
+.nav > *{
+    position: relative;
+}
+.nav a{
+    position: relative;
+    text-align: none;
+    text-transform: uppercase;
+    color:black;
+    font-size: 12px;
+    font-weight: 300;
+   
+    
+}
+
+.header{
+    width:100%;
+    height:30vh;
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    gap:2rem
+}
+.header col{
+    width:60%;
+}
+.header .col:nth-child(2){
+    width:40%;
+}
+.header h1{
+    position: relative;
+    font-family: "Monument Extended";
+    font-size:100px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin:0;
+}
+.play-wrapper{
+    position: relative;
+    width:100%;
+    height:80px;
+    background: url("40128ccc44e9e9ad3be4de4dd9eae40c.jpg");
+    background-repeat:no-repeat 50% 50% ;
+    background-size: cover;
+    border-radius: 50px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding:0.4rem;
+
+
+    
+}
+.play-btn{
+    width:70px;
+    height:70px;
+    background-color: black;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play-btn {
+    color:lightskyblue;
+}
+.pattern{
+    text-align: center;
+    padding:1rem 0;
+    letter-spacing:10px;
+    opacity: 0.4;
+}
+.copy p{
+    font-family: "Monument Extended";
+    font-size: 10px;
+    font-weight: 1.5;
+    font-weight: 300;
+    
+}
+.btn-container{
+    width:100%;
+    padding:2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -2rem;
+}
+.btns{
+    display:flex;
+}
+.btn{
+    border:1px solid black;
+    margin-right:1rem;
+    padding:0.4rem 0.8rem;
+    border-radius:20px;
+    font-family: "Monument Extended";
+    font-size: 10px;
+    font-weight: 300;
+}
+.divider{
+    width:70%;
+}
+.hr{
+    width:100%;
+    height:1px;
+    background: rgba(0, 0, 0, 0.2);
+}
+.hero{
+    position: relative;
+    width:95%;
+    height:50vh;
+    border-radius: 40px 40px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+}
+.hero img{
+    width: 100%;
+    margin-left: 2rem;
+}
+.hero-wrapper{
+    position: absolute;
+    width:0;
+    height:100%;
+    background-color: lightskyblue;
+
+}
+.arrow{
+    position: absolute;
+    width:120px;
+    height:120px;
+    border:4px solid rgb(45, 45, 45);
+    border-radius: 100%;
+    background-color: black;
+   top:-1.4rem ;
+   right:4rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 40px;
+   color:lightskyblue;
+   font-family: "Dahlia";
+   transform: rotate(-15deg);
+}
+.marque{
+    position: absolute;
+    bottom:0;
+    width:100%;
+    margin:0 auto;
+    padding:1em 0;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 3;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.marque span{
+    font-family: "Monument Extended";
+    text-transform: uppercase;
+    font-weight: 400;
+    color:lightskyblue;
+    mix-blend-mode: normal !important;
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding-left: -10%;
+    animation:marque-animation 80s linear infinite
+}
+@keyframes marque-animation{
+    0%{
+        transform:translate(0,0)
+    }
+
+    100%{
+        transform: translate(-100%, 0);
+    }
+}   
